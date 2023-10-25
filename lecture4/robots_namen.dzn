@@ -1,0 +1,6 @@
+Roboter = {Kuka, Staeubli, ABB};
+Tasks = {drill, insert, tighten};
+
+kosten = [| 20, 5, 8 |
+            15, 20, 15|
+            10, 30, 7|];

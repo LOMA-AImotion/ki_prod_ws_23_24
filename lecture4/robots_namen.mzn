@@ -1,8 +1,6 @@
 % Parameter
-int: n; % Anzahl Roboter
-int: m; % Anzahl Tasks
-set of int: Roboter = 1..n;
-set of int: Tasks = 1..m;
+enum Roboter;
+enum Tasks;
 array[Roboter, Tasks] of int: kosten;
 
 % Entscheidungsvariablen

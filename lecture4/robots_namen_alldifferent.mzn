@@ -1,8 +1,6 @@
 % Parameter
-int: n; % Anzahl Roboter
-int: m; % Anzahl Tasks
-set of int: Roboter = 1..n;
-set of int: Tasks = 1..m;
+enum Roboter;
+enum Tasks;
 array[Roboter, Tasks] of int: kosten;
 
 % Entscheidungsvariablen
@@ -13,10 +11,9 @@ array[Roboter] of var Tasks: roboter2task;
 
 % Constraints 
 % 1. Jeder Roboter führt genau eine Aufgabe aus
-constraint forall(r1 in Roboter, r2 in Roboter 
-                  where r1 != r2) (
-  roboter2task[r1] != roboter2task[r2]
-);
+% mit Hilfe von "alldifferent"
+include "alldifferent.mzn";
+constraint alldifferent(roboter2task);
 
 % 2. Die Gesamtkosten sind die Summe der Kosten, 
 % die durch die Zuweisung entstehen
