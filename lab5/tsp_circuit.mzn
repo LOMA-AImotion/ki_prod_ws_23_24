@@ -2,6 +2,8 @@
 % Takes cities and next[c] for every city
 int: n_locations;
 set of int: Locations = 1..n_locations;
+array[Locations] of string: loc_names;
+
 
 array[Locations, Locations] of int: distances;
 array[Locations, Locations] of int: durations;
