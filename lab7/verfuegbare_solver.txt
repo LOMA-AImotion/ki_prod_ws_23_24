@@ -1,0 +1,5 @@
+['api', 
+'cbc', 
+'chuffed', 'coin-bc', 'coinbc', 
+'com.google.ortools.sat', 'cp', 
+'cplex', 'cpsatlp', 'experimental', 'findmus', 'float', 'gecode', 'gist', 'globalizer', 'gurobi', 'highs', 'int', 'jacopp', 'lcg', 'mip', 'org.chuffed.chuffed', 'org.gecode.gecode', 'org.gecode.gist', 'org.minizinc.findmus', 'org.minizinc.globalizer', 'org.minizinc.mip.coin-bc', 'org.minizinc.mip.cplex', 'org.minizinc.mip.gurobi', 'org.minizinc.mip.highs', 'org.minizinc.mip.scip', 'org.minizinc.mip.xpress', 'ortools', 'osicbc', 'restart', 'sat', 'scip', 'set', 'tool', 'xpress']
