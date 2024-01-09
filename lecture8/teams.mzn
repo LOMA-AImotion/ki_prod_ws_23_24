@@ -28,6 +28,9 @@ constraint anz_scientists = count(
 constraint anz_managers = 
   sum(p in Persons) ( bool2int(ist[p] == manager
                                /\ team[p] == 1 ) );
+                               
+                             
+
 constraint anz_sales = 
   sum(p in Persons) ( bool2int(ist[p] == sales
                                /\ team[p] == 1 ) );
